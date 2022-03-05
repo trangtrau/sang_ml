@@ -52,7 +52,7 @@ jobs:
     environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu:11
     compute: azureml:NODE
     command: >-
-      python XXJOBXX.py 
+      python train.py 
       --training_data ${{inputs.training_data}} 
       --test_data ${{outputs.test_data}} 
       --model_output ${{outputs.model_output}}
